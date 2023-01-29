@@ -1,0 +1,76 @@
+<div class="modal" id="modal_transaction_create" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Nueva Transacción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form enctype="multipart/form-data" id="form-create"  method="POST">
+            <input type="hidden" name="clientId">
+            <div class="form-group row">
+              <label for="channelId" class="col-sm-3 col-form-label">Canal</label>
+              <div class="col-sm-8">
+                <select class="custom-select mr-sm-2 form-control" name="channelId">
+                  <option selected>Seleccione...</option>
+                  <option value="1">Whatsapp</option>
+                  <option value="2">Telegram</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="bankId" class="col-sm-3 col-form-label">Banco</label>
+              <div class="col-sm-8">
+                <select class="custom-select mr-sm-2 form-control" name="bankId">
+                  <option selected>Seleccione...</option>
+                  <option value="1">Banco de Crédito del Perú</option>
+                  <option value="2">Banco Pichincha</option>
+                  <option value="3">BBVA</option>
+                  <option value="4">Interbank</option>
+                  <option value="5">MiBanco</option>
+                  <option value="6">Scotiabank Perú</option>
+                  <option value="7">Banco GNB Perú</option>
+                  <option value="8">Banco Falabella</option>
+                  <option value="9">Banco Ripley</option>
+                  <option value="10">Banco Santander Perú</option>
+                  <option value="11">Banco Interamericano de Finanzas (BanBif)</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="bankCode" class="col-sm-3 col-form-label">Codigo</label>
+              <div class="col-sm-8">
+                <input type="text" name="bankCode" rows="3" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="currencyId" class="col-sm-3 col-form-label">Moneda</label>
+              <div class="col-sm-8">
+                <select class="custom-select mr-sm-2 form-control" name="currencyId">
+                  <option selected value="1">SOLES</option>
+                  <option value="2">DOLARES</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="quantity" class="col-sm-3 col-form-label">Monto</label>
+              <div class="col-sm-8">
+                <input type="number" name="quantity" rows="3" class="form-control" >
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="imageUrl" class="col-sm-3 col-form-label">Imagen</label>
+              <div class="col-sm-8">
+                <input type="file" id="imageUrl" name="imageUrl"
+                accept="image/png, image/jpeg" class="form-control">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="btn-create-transaction">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>

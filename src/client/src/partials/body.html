@@ -1,0 +1,57 @@
+<section id=body>
+    <div class="list-users">
+        <h3 class="list-users--title">Lista de Usuarios</h3>
+        <hr />
+        <table id="dt-users" class="list-users--table display dataTable" aria-describedby="example_info">
+        </table>
+    </div>
+    <div class="detail-user">
+        <h3></h3>
+        <div class="detail-user--container">
+            <form id="form-client">
+                <div class="form-group row">
+                  <label for="Id" class="col-sm-3 col-form-label">Id</label>
+                  <div class="col-sm-9">
+                    <input type="text" readonly name="Id" class="form-control-plaintext">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="documentNumber" class="col-sm-3 col-form-label">DNI</label>
+                  <div class="col-sm-9">
+                    <input type="text" readonly name="documentNumber" class="form-control-plaintext">
+                  </div>
+                </div>
+                <div>
+                <div class="form-group row">
+                  <label for="email" class="col-sm-3 col-form-label">Email</label>
+                  <div class="col-sm-9">
+                    <input type="text" readonly name="email"  class="form-control-plaintext">
+                  </div>
+                </div>
+                <div class="form-group row">
+                  <label for="balance" class="col-sm-3 col-form-label">Balance</label>
+                  <div class="col-sm-9">
+                    <div class="balance"></div>
+                    <input type="text" readonly name="balance" class="form-control-plaintext">
+                  </div>
+                </div>
+            </form>
+        </div>
+        <div class="detail-user--table-container-header">
+          <h4>Transacciones</h4>
+          <button id="btn-modal-create" disabled type="button" class="btn btn-success">
+            AGREGAR <i class="bi bi-plus-circle"></i>
+          </button>
+        </div>
+        <table id="dt-transactions" class="list-users--table display dataTable" >
+        </table>
+    </div>
+    <div class="notifications">
+      <div class="alert alert-success alert-dismissible fade" role="alert">
+        <div></div>
+        <button type="button" class="btn close" data-dismiss="alert" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+    </div>
+</section>

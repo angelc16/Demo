@@ -1,0 +1,31 @@
+<div class="modal" id="modal_transaction_update" tabindex="-1">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Deshacer Transacción</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="form-update">
+            <input type="hidden" name="transactionId">
+            <div class="form-group row">
+              <label for="quantity" class="col-sm-3 col-form-label">Monto</label>
+              <div class="col-sm-9">
+                <input type="number" name="quantity" class="form-control">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="reason" class="col-sm-3 col-form-label">Motivo</label>
+              <div class="col-sm-9">
+                <textarea type="text" required name="reason" rows="3" class="form-control" ></textarea>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary" id="btn-update-transaction">Guardar cambios</button>
+        </div>
+      </div>
+    </div>
+  </div>
